@@ -8,6 +8,19 @@
     <artifactId>browserTest</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <mvc/>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>mvc</id>
+            <properties>
+                <multiVarejo>**/mvc</multiVarejo>
+            </properties>
+        </profile>
+    </profiles>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -47,4 +60,22 @@
             </exclusions>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.19.1</version>
+                <configuration>
+                    <includes>
+
+                        <include>${mvc}</include>
+
+                    </includes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
