@@ -21,7 +21,7 @@ public class mvc {
     @Test
     public void testComHeadlessBrowser() throws InterruptedException, IOException {
 
-        File file = new File("/home/fernando/Downloads/phantomjs-2.1.1-linux-x86_64/bin/phantomjs");
+        File file = new File("phantomjs");
         SimpleDateFormat formato = new SimpleDateFormat();
         Calendar calendario = Calendar.getInstance();
         Date data = new Date();
@@ -178,7 +178,7 @@ public class mvc {
             driver.close();
         } catch (Exception e) {
             File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(srcFile, new File("/home/fernando/Imagens/screenshots/" + data.getTime() + ".png"));
+            FileUtils.copyFile(srcFile, new File("/screenshots/" + data.getTime() + ".png"));
         }
     }
 }
