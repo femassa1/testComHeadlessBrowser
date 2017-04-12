@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55f6d09f-a97d-4e7d-9f0e-5ca4f265a481" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phantomjs" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/asp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/mvc.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/asp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mvc.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phantomjsdriver.log" afterPath="$PROJECT_DIR$/phantomjsdriver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/mvc.java" afterPath="$PROJECT_DIR$/src/test/java/mvc.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -40,8 +34,8 @@
       <file leaf-file-name="mvc.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/mvc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="180" column="77" lean-forward="true" selection-start-line="180" selection-start-column="77" selection-end-line="180" selection-end-column="77" />
+            <state relative-caret-position="234">
+              <caret line="173" column="0" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -572,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492021763500</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="&quot;ajustando caminho do driver 'phantomjs' e do screenshot&quot;">
+      <created>1492023648175</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1492023648175</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -654,7 +655,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;second commit&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;second commit&quot;" />
+    <MESSAGE value="&quot;ajustando caminho do driver 'phantomjs' e do screenshot&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;ajustando caminho do driver 'phantomjs' e do screenshot&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -761,8 +763,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mvc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="180" column="77" lean-forward="true" selection-start-line="180" selection-start-column="77" selection-end-line="180" selection-end-column="77" />
+        <state relative-caret-position="234">
+          <caret line="173" column="0" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
           <folding />
         </state>
       </provider>

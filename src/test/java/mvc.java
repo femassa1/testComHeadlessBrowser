@@ -173,7 +173,7 @@ public class mvc {
             Thread.sleep(4000);
 
             File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(srcFile, new File("/home/fernando/Imagens/screenshots/" + data.getTime() + ".png"));
+            FileUtils.copyFile(srcFile, new File("/screenshots/" + data.getTime() + ".png"));
 
             driver.close();
         } catch (Exception e) {

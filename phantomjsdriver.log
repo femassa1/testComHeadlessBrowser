@@ -1855,3 +1855,7 @@
 [INFO  - 2017-04-12T18:59:07.265Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
 [INFO  - 2017-04-12T19:00:14.271Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
 [INFO  - 2017-04-12T19:00:19.259Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-04-12T19:00:53.655Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-04-12T19:01:56.781Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-04-12T19:01:56.781Z] SessionManagerReqHand - _cleanupWindowlessSessions - Deleted Session 'cdcfce70-1fb1-11e7-a519-05d4660ce0ee', because windowless
+[INFO  - 2017-04-12T19:02:43.315Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
