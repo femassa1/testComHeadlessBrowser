@@ -22,6 +22,7 @@ public class mvc {
     public void testComHeadlessBrowser() throws InterruptedException, IOException {
 
         File file = new File("phantomjs");
+
         SimpleDateFormat formato = new SimpleDateFormat();
         Calendar calendario = Calendar.getInstance();
         Date data = new Date();
@@ -35,7 +36,8 @@ public class mvc {
         driver.manage().window().setSize(new Dimension(1920, 1080));
 
         try {
-            driver.get("https://qa.me.com.br/Default.asp?_OrigemID=1");
+            //driver.get("https://qa.me.com.br/Default.asp?_OrigemID=1");
+            driver.get("https://trunk.me.com.br/Default.asp?_OrigemID=1");
 
             Thread.sleep(3000);
 
@@ -43,7 +45,8 @@ public class mvc {
             driver.switchTo().frame(driver.findElement(By.tagName("iframe")));
 
             driver.findElement(By.name("LoginName")).clear();
-            driver.findElement(By.name("LoginName")).sendKeys("B00LPA");
+            //driver.findElement(By.name("LoginName")).sendKeys("B00LPA");
+            driver.findElement(By.name("LoginName")).sendKeys("B02RCR");
 
             driver.findElement(By.name("RAWSenha")).clear();
             driver.findElement(By.name("RAWSenha")).sendKeys("qualidade@123");
@@ -178,7 +181,7 @@ public class mvc {
             driver.close();
         } catch (Exception e) {
             File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(srcFile, new File("target/screenshots/" + data.getTime() + ".png"));
+            FileUtils.copyFile(srcFile, new File("/screenshots/" + data.getTime() + ".png"));
         }
     }
 }

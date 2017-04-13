@@ -16,7 +16,7 @@
         <profile>
             <id>mvc</id>
             <properties>
-                <multiVarejo>**/mvc</multiVarejo>
+                <mvc>**/mvc</mvc>
             </properties>
         </profile>
     </profiles>
