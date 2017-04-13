@@ -20,10 +20,10 @@ public class mvc {
 
     @Test
     public void testComHeadlessBrowser() throws InterruptedException, IOException {
-
         File file = new File("phantomjs");
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
         Calendar calendario = Calendar.getInstance();
+
 
         System.setProperty("phantomjs.binary.path", file.getAbsolutePath());
         DesiredCapabilities caps = new DesiredCapabilities();
@@ -35,6 +35,9 @@ public class mvc {
         driver.manage().window().setSize(new Dimension(1920, 1080));
 
         try {
+
+            System.out.println("Início do teste");
+
             driver.get("https://qa.me.com.br/Default.asp?_OrigemID=1");
 
             Thread.sleep(3000);
@@ -53,6 +56,9 @@ public class mvc {
             Thread.sleep(2000);
 
             if (driver.getCurrentUrl().contains("Timezone")) {
+                Thread.sleep(3000);
+                System.out.println("TimezonePopup");
+                screenshot();
                 driver.switchTo().frame("TimezonePopup");
                 driver.findElement(By.id("btnAcceptTimeZone")).click();
             }
@@ -90,6 +96,8 @@ public class mvc {
 
             driver.switchTo().defaultContent();
 
+            System.out.println(driver.getCurrentUrl());
+
             driver.findElement(By.xpath("//input[@placeholder='Buscar']")).sendKeys("GC96034010");
 
             driver.findElement(By.id("catalog-ativar")).click();
@@ -113,6 +121,8 @@ public class mvc {
 
             Thread.sleep(2000);
 
+            System.out.println("Item adicionado");
+
             driver.findElement(By.id("btnAvancar")).click();
 
             Thread.sleep(4000);
@@ -129,7 +139,9 @@ public class mvc {
 
             driver.findElement(By.id("btnAvancar")).click();
 
-            Thread.sleep(4000);
+            Thread.sleep(5000);
+
+            System.out.println("Comentários adicionados");
 
             combo = new Select(driver.findElement(By.name("Itens[0].GrupoCompras.Value")));
             combo.selectByValue("115");
@@ -139,9 +151,11 @@ public class mvc {
 
             driver.findElement(By.name("Itens[0].DataEsperadaComprador.Value")).click();
 
-            driver.findElement(By.name("Itens[0].DataEsperadaComprador.Value")).sendKeys(formato.format(calendario.getTime()).replaceAll("/",""));
+            driver.findElement(By.name("Itens[0].DataEsperadaComprador.Value")).sendKeys(formato.format(calendario.getTime()).replaceAll("/", ""));
             driver.findElement(By.name("Itens[0].BOrgs[0].BorgDescription")).click();
             Thread.sleep(1000);
+
+            System.out.println("preenchendo atributos");
 
             driver.findElement(By.name("Itens[0].BOrgs[0].BorgDescription")).sendKeys(Keys.DOWN);
             driver.findElement(By.name("Itens[0].BOrgs[0].BorgDescription")).sendKeys(Keys.ENTER);
@@ -173,6 +187,8 @@ public class mvc {
             Thread.sleep(1000);
             driver.findElement(By.name("Itens[0].CostObject.ListCostObject[0].Ordem.Text")).sendKeys(Keys.DOWN);
             driver.findElement(By.name("Itens[0].CostObject.ListCostObject[0].Ordem.Text")).sendKeys(Keys.ENTER);
+
+            System.out.println("Atributos preenchidos");
 
             driver.findElement(By.id("btnAvancar")).click();
             Thread.sleep(5000);

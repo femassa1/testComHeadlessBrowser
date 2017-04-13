@@ -24,29 +24,21 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+            <state relative-caret-position="288">
+              <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mvc.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mvc.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/mvc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="131" column="31" lean-forward="false" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="phantomjsdriver.log" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/phantomjsdriver.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="244">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,6 +68,7 @@
       <find>prope</find>
       <find>srcFile</find>
       <find>screenshot();</find>
+      <find>System.ou</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,11 +85,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/test2.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/asp.java" />
         <option value="$PROJECT_DIR$/src/main/java/mvc.java" />
-        <option value="$PROJECT_DIR$/src/test/java/mvc.java" />
         <option value="$PROJECT_DIR$/phantomjsdriver.log" />
+        <option value="$PROJECT_DIR$/src/test/java/mvc.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -300,6 +293,27 @@
       <option name="MAIN_CLASS_NAME" value="mvc" />
       <option name="METHOD_NAME" value="testComHeadlessBrowser" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="mvc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="browserHandlessTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="mvc" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -625,14 +639,16 @@
       <envs />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.asp.testComHeadlessBrowserComHtmlUnitDriver" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.mvc.testComHeadlessBrowser" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.mvc" />
     </list>
     <recent_temporary>
-      <list size="2">
+      <list size="3">
         <item index="0" class="java.lang.String" itemvalue="JUnit.mvc.testComHeadlessBrowser" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.asp.testComHeadlessBrowserComHtmlUnitDriver" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.mvc" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.asp.testComHeadlessBrowserComHtmlUnitDriver" />
       </list>
     </recent_temporary>
   </component>
@@ -715,30 +731,22 @@
       <option name="project" value="LOCAL" />
       <updated>1492105986376</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="&quot;asp -&gt; mvc&quot;">
+      <created>1492112529339</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1492112529339</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 16h 13m 34s.xml">
-      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
+    <history-entry file="mvc - 2017.04.13 at 17h 03m 51s.xml">
+      <configuration name="mvc" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 16h 18m 40s.xml">
-      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 16h 20m 49s.xml">
-      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 16h 22m 13s.xml">
-      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 16h 24m 39s.xml">
-      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 16h 26m 08s.xml">
-      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 16h 32m 09s.xml">
-      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
+    <history-entry file="mvc - 2017.04.13 at 17h 06m 16s.xml">
+      <configuration name="mvc" configurationId="JUnit" />
     </history-entry>
     <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 16h 34m 11s.xml">
       <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
@@ -747,6 +755,21 @@
       <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
     </history-entry>
     <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 16h 41m 20s.xml">
+      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 16h 50m 04s.xml">
+      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 17h 03m 07s.xml">
+      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 17h 04m 31s.xml">
+      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 17h 10m 18s.xml">
+      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 17h 13m 15s.xml">
       <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -802,6 +825,7 @@
     <MESSAGE value="&quot;ajustando path&quot;" />
     <MESSAGE value="&quot;asp -&gt; mvc&quot;" />
     <option name="LAST_COMMIT_MESSAGE" value="&quot;asp -&gt; mvc&quot;" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -907,14 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/screenshots/1492101667828.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -925,19 +941,45 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mvc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="131" column="31" lean-forward="false" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phantomjsdriver.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/spi/LoggerFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/Logger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mvc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
