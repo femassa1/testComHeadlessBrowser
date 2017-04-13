@@ -172,12 +172,11 @@ public class mvc {
             driver.findElement(By.name("Itens[0].CostObject.ListCostObject[0].Ordem.Text")).sendKeys(Keys.ENTER);
 
             driver.findElement(By.id("btnAvancar")).click();
-
-            Thread.sleep(4000);
+            Thread.sleep(5000);
 
             driver.findElement(By.xpath("//button[contains(.,'Finalizar')]")).click();
 
-            Thread.sleep(4000);
+            Thread.sleep(3000);
 
             File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(srcFile, new File("target/screenshots/" + data.getTime() + ".png"));
