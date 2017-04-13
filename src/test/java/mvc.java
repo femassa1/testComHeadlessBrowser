@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 public class mvc {
     protected static DesiredCapabilities capabilities;
@@ -53,14 +54,15 @@ public class mvc {
 
             driver.findElement(By.cssSelector(".botaoLogin")).click();
 
-            Thread.sleep(2000);
+            Thread.sleep(5000);
 
             if (driver.getCurrentUrl().contains("Timezone")) {
-                Thread.sleep(3000);
                 System.out.println("TimezonePopup");
                 screenshot();
-                driver.switchTo().frame("TimezonePopup");
+                trocarFrame();
                 driver.findElement(By.id("btnAcceptTimeZone")).click();
+                Thread.sleep(3000);
+                driver.switchTo().defaultContent();
             }
 
             driver.findElement(By.cssSelector("a[href='DO/Request/Create.mvc']")).click();
@@ -92,9 +94,9 @@ public class mvc {
 
             driver.findElement(By.id("btnSave")).click();
 
-            Thread.sleep(2000);
+            Thread.sleep(3000);
 
-            driver.switchTo().defaultContent();
+            //driver.switchTo().defaultContent();
 
             System.out.println(driver.getCurrentUrl());
 
@@ -209,5 +211,23 @@ public class mvc {
         Date data = new Date();
         File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(srcFile, new File("target/screenshots/" + data.getTime() + ".png"));
+    }
+
+    public void trocarFrame() {
+        System.out.println("Realiza a troca de frame...");
+
+        Integer cont = 0;
+        List<WebElement> elementList = driver.findElements(By.tagName("iframe"));
+
+        try {
+            while (elementList.size() == 0 && cont != 30) {
+                Thread.sleep(500);
+                cont++;
+            }
+            driver.switchTo().frame(driver.findElement(By.tagName("iframe")));
+
+        } catch (Exception e) {
+            System.out.println("Não foi possível trocar para o Frame... \n" + e);
+        }
     }
 }

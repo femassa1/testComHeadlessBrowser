@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55f6d09f-a97d-4e7d-9f0e-5ca4f265a481" name="Default" comment="&quot;asp -&gt; mvc&quot;">
+    <list default="true" id="55f6d09f-a97d-4e7d-9f0e-5ca4f265a481" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phantomjsdriver.log" afterPath="$PROJECT_DIR$/phantomjsdriver.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/mvc.java" afterPath="$PROJECT_DIR$/src/test/java/mvc.java" />
@@ -34,8 +34,8 @@
       <file leaf-file-name="mvc.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/mvc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="273">
+              <caret line="135" column="13" lean-forward="true" selection-start-line="135" selection-start-column="13" selection-end-line="135" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,6 +69,7 @@
       <find>srcFile</find>
       <find>screenshot();</find>
       <find>System.ou</find>
+      <find>scree</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -88,8 +89,8 @@
         <option value="$PROJECT_DIR$/src/test/java/asp.java" />
         <option value="$PROJECT_DIR$/src/main/java/mvc.java" />
         <option value="$PROJECT_DIR$/phantomjsdriver.log" />
-        <option value="$PROJECT_DIR$/src/test/java/mvc.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/mvc.java" />
       </list>
     </option>
   </component>
@@ -738,7 +739,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492112529339</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="&quot;asp -&gt; mvc&quot;">
+      <created>1492114443315</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1492114443315</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -747,15 +755,6 @@
     </history-entry>
     <history-entry file="mvc - 2017.04.13 at 17h 06m 16s.xml">
       <configuration name="mvc" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 16h 34m 11s.xml">
-      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 16h 38m 33s.xml">
-      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 16h 41m 20s.xml">
-      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
     </history-entry>
     <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 16h 50m 04s.xml">
       <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
@@ -770,6 +769,15 @@
       <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
     </history-entry>
     <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 17h 13m 15s.xml">
+      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 17h 56m 12s.xml">
+      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 18h 00m 02s.xml">
+      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 18h 05m 50s.xml">
       <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -975,8 +983,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mvc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="273">
+          <caret line="135" column="13" lean-forward="true" selection-start-line="135" selection-start-column="13" selection-end-line="135" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
