@@ -39,18 +39,23 @@ public class mvc {
 
             System.out.println("Início do teste");
 
-            driver.get("https://qa.me.com.br/Default.asp?_OrigemID=1");
+            //driver.get("https://qa.me.com.br/Default.asp?_OrigemID=1");
+            driver.get("https://trunk.me.com.br/Default.asp");
 
             Thread.sleep(3000);
 
             //wait.until(ExpectedConditions.presenceOfElementLocated(By.tagName("iframe")));
-            driver.switchTo().frame(driver.findElement(By.tagName("iframe")));
+            //driver.switchTo().frame(driver.findElement(By.tagName("iframe")));
+            trocarFrame();
 
             driver.findElement(By.name("LoginName")).clear();
             driver.findElement(By.name("LoginName")).sendKeys("B00LPA");
 
             driver.findElement(By.name("RAWSenha")).clear();
-            driver.findElement(By.name("RAWSenha")).sendKeys("qualidade@123");
+            //if(driver.getCurrentUrl().contains("qa"))
+            //driver.findElement(By.name("RAWSenha")).sendKeys("qualidade@123");
+            //else
+            driver.findElement(By.name("RAWSenha")).sendKeys("trunk123");
 
             driver.findElement(By.cssSelector(".botaoLogin")).click();
 
@@ -60,7 +65,12 @@ public class mvc {
                 System.out.println("TimezonePopup");
                 screenshot();
                 trocarFrame();
-                driver.findElement(By.id("btnAcceptTimeZone")).click();
+                try {
+                    driver.findElement(By.id("btnAcceptTimeZone")).click();
+                } catch (Exception e) {
+                    trocarFrame();
+                    driver.findElement(By.id("btnAcceptTimeZone")).click();
+                }
                 Thread.sleep(3000);
                 driver.switchTo().defaultContent();
             }
@@ -133,6 +143,11 @@ public class mvc {
             while (driver.findElements(By.id("Observacao_Value")).size() == 0 && count < 10) {
                 Thread.sleep(2000);
                 count++;
+
+                if (count == 8) {
+                    System.out.println("Item adicionado");
+                    screenshot();
+                }
             }
 
             driver.findElement(By.id("Observacao_Value")).sendKeys("TESTE AUTOMAÇÃO - QA");
@@ -201,23 +216,27 @@ public class mvc {
 
             screenshot();
 
+            System.out.println("RFQNumero : " + driver.findElement(By.cssSelector("input[id='Requisicao']")).getAttribute("value"));
+
             driver.close();
         } catch (Exception e) {
             screenshot();
         }
     }
 
-    public void screenshot() throws IOException {
+    private void screenshot() throws IOException {
         Date data = new Date();
         File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(srcFile, new File("target/screenshots/" + data.getTime() + ".png"));
     }
 
-    public void trocarFrame() {
+    private void trocarFrame() {
         System.out.println("Realiza a troca de frame...");
 
         Integer cont = 0;
         List<WebElement> elementList = driver.findElements(By.tagName("iframe"));
+
+        System.out.println("pegou iframes");
 
         try {
             while (elementList.size() == 0 && cont != 30) {
@@ -225,6 +244,8 @@ public class mvc {
                 cont++;
             }
             driver.switchTo().frame(driver.findElement(By.tagName("iframe")));
+
+            System.out.println("frame trocado");
 
         } catch (Exception e) {
             System.out.println("Não foi possível trocar para o Frame... \n" + e);
