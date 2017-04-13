@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55f6d09f-a97d-4e7d-9f0e-5ca4f265a481" name="Default" comment="&quot;ajustando caminho do driver 'phantomjs' e do screenshot [2]&quot;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/mvc.java" />
+    <list default="true" id="55f6d09f-a97d-4e7d-9f0e-5ca4f265a481" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phantomjsdriver.log" afterPath="$PROJECT_DIR$/phantomjsdriver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/mvc.java" afterPath="$PROJECT_DIR$/src/test/java/mvc.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/asp.java" afterPath="$PROJECT_DIR$/src/test/java/asp.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,11 +21,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+            <state relative-caret-position="414">
+              <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -46,8 +44,8 @@
       <file leaf-file-name="mvc.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/mvc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="74" />
+            <state relative-caret-position="252">
+              <caret line="30" column="47" lean-forward="false" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -56,8 +54,18 @@
       <file leaf-file-name="mvc.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mvc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="183" column="34" lean-forward="false" selection-start-line="183" selection-start-column="34" selection-end-line="183" selection-end-column="34" />
+            <state relative-caret-position="270">
+              <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="asp.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/asp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="28" column="65" lean-forward="true" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -103,9 +111,10 @@
         <option value="$PROJECT_DIR$/src/main/java/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/test2.java" />
         <option value="$PROJECT_DIR$/src/test/java/mvc.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mvc.java" />
         <option value="$PROJECT_DIR$/phantomjsdriver.log" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/mvc.java" />
+        <option value="$PROJECT_DIR$/src/test/java/asp.java" />
       </list>
     </option>
   </component>
@@ -687,19 +696,17 @@
       <option name="project" value="LOCAL" />
       <updated>1492023776960</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="&quot;ajustando caminho do driver 'phantomjs' e do screenshot [2]&quot;">
+      <created>1492094308340</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1492094308340</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="asp_testComHeadlessBrowserComHtmlUnitDriver - 2017.04.12 at 15h 56m 22s.xml">
-      <configuration name="asp.testComHeadlessBrowserComHtmlUnitDriver" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.12 at 15h 55m 24s.xml">
-      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.12 at 15h 58m 54s.xml">
-      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="mvc_testComHeadlessBrowser - 2017.04.12 at 18h 53m 36s.xml">
       <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
     </history-entry>
@@ -719,6 +726,15 @@
       <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
     </history-entry>
     <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 11h 38m 05s.xml">
+      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 11h 47m 18s.xml">
+      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 12h 57m 24s.xml">
+      <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="mvc_testComHeadlessBrowser - 2017.04.13 at 12h 58m 33s.xml">
       <configuration name="mvc.testComHeadlessBrowser" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -782,16 +798,24 @@
           <properties />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/mvc.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mvc.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="49" />
+      <option name="time" value="52" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
-        <watch expression="driver.getTitle()" language="JAVA" />
-        <watch expression="driver.getCurrentUrl()" language="JAVA" />
-        <watch expression="driver.findElements(By.cssSelector(&quot;a[href='ListaTodosProdutosIE.asp?processo=6']&quot;)).size() != 0" language="JAVA" />
-        <watch expression="driver.findElements(By.id(&quot;btnOKGravaBOrg&quot;))" language="JAVA" />
-        <watch expression="file.getPath()" language="JAVA" />
+        <watch expression="file.getAbsolutePath()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -853,30 +877,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/asp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mvc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mvc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="183" column="34" lean-forward="false" selection-start-line="183" selection-start-column="34" selection-end-line="183" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phantomjsdriver.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -887,8 +887,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        <state relative-caret-position="414">
+          <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mvc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="30" column="47" lean-forward="false" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/asp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="28" column="65" lean-forward="true" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
           <folding />
         </state>
       </provider>

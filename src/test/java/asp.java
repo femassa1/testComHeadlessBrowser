@@ -22,7 +22,7 @@ public class asp {
 
     @Test
     public void testComHeadlessBrowserComHtmlUnitDriver() throws InterruptedException, IOException {
-        File file = new File("/home/fernando/Downloads/phantomjs-2.1.1-linux-x86_64/bin/phantomjs");
+        File file = new File("phantomjs");
         Date data = new Date();
         System.setProperty("phantomjs.binary.path", file.getAbsolutePath());
         DesiredCapabilities caps = new DesiredCapabilities();
