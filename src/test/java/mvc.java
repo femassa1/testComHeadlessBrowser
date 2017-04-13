@@ -58,10 +58,10 @@ public class mvc {
             }
 
             driver.findElement(By.cssSelector("a[href='DO/Request/Create.mvc']")).click();
-            Thread.sleep(2000);
+            Thread.sleep(4000);
 
             driver.findElement(By.id("btnConfiguration")).click();
-            Thread.sleep(2000);
+            Thread.sleep(3000);
             driver.switchTo().frame(driver.findElement(By.tagName("iframe")));
             Thread.sleep(1000);
             driver.findElement(By.id("btnClearBOrgs")).click();
@@ -70,23 +70,23 @@ public class mvc {
             combo.selectByValue("NB");
 
             driver.findElement(By.id("BOrgs_0__BorgDescription")).sendKeys("MC11 - MC11 - NAO PRODUTIVO");
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             driver.findElement(By.id("BOrgs_0__BorgDescription")).sendKeys(Keys.DOWN);
             driver.findElement(By.id("BOrgs_0__BorgDescription")).sendKeys(Keys.ENTER);
 
             driver.findElement(By.id("BOrgs_1__BorgDescription")).sendKeys("0007 - INTERNATIONAL SANTO AMARO (0007)");
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             driver.findElement(By.id("BOrgs_1__BorgDescription")).sendKeys(Keys.DOWN);
             driver.findElement(By.id("BOrgs_1__BorgDescription")).sendKeys(Keys.ENTER);
 
             driver.findElement(By.id("BOrgs_2__BorgDescription")).sendKeys("M100 - M100 - Centro Série 10");
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             driver.findElement(By.id("BOrgs_2__BorgDescription")).sendKeys(Keys.DOWN);
             driver.findElement(By.id("BOrgs_2__BorgDescription")).sendKeys(Keys.ENTER);
 
             driver.findElement(By.id("btnSave")).click();
 
-            Thread.sleep(3000);
+            Thread.sleep(4000);
 
             driver.switchTo().defaultContent();
 
@@ -94,7 +94,7 @@ public class mvc {
 
             driver.findElement(By.id("catalog-ativar")).click();
 
-            Thread.sleep(2000);
+            Thread.sleep(3000);
 
             driver.findElement(By.cssSelector("input[id='Tipo'][type='radio'][value='" + "CodigoCliente" + "']")).click();
 
@@ -107,7 +107,7 @@ public class mvc {
             driver.findElement(By.xpath("//button[@onclick='clickRemoveAll();']")).click();
             driver.findElement(By.xpath("//button[contains(.,'Sim')]")).click();
 
-            Thread.sleep(2000);
+            Thread.sleep(3000);
 
             driver.findElement(By.cssSelector("span[class='awesome shopping-cart']")).click();
 
@@ -115,7 +115,7 @@ public class mvc {
 
             driver.findElement(By.id("btnAvancar")).click();
 
-            Thread.sleep(3000);
+            Thread.sleep(4000);
 
             driver.findElement(By.id("Observacao_Value")).sendKeys("TESTE AUTOMAÇÃO - QA");
 
@@ -123,7 +123,7 @@ public class mvc {
 
             driver.findElement(By.id("btnAvancar")).click();
 
-            Thread.sleep(3000);
+            Thread.sleep(4000);
 
             combo = new Select(driver.findElement(By.name("Itens[0].GrupoCompras.Value")));
             combo.selectByValue("115");
