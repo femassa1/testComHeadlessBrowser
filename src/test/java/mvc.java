@@ -22,7 +22,7 @@ public class mvc {
     public void testComHeadlessBrowser() throws InterruptedException, IOException {
 
         File file = new File("phantomjs");
-        SimpleDateFormat formato = new SimpleDateFormat();
+        SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
         Calendar calendario = Calendar.getInstance();
         Date data = new Date();
         System.setProperty("phantomjs.binary.path", file.getAbsolutePath());
@@ -50,7 +50,7 @@ public class mvc {
 
             driver.findElement(By.cssSelector(".botaoLogin")).click();
 
-            Thread.sleep(3000);
+            Thread.sleep(2000);
 
             if (driver.getCurrentUrl().contains("Timezone")) {
                 driver.switchTo().frame("TimezonePopup");
@@ -58,10 +58,10 @@ public class mvc {
             }
 
             driver.findElement(By.cssSelector("a[href='DO/Request/Create.mvc']")).click();
-            Thread.sleep(3000);
+            Thread.sleep(2000);
 
             driver.findElement(By.id("btnConfiguration")).click();
-            Thread.sleep(3000);
+            Thread.sleep(2000);
             driver.switchTo().frame(driver.findElement(By.tagName("iframe")));
             Thread.sleep(1000);
             driver.findElement(By.id("btnClearBOrgs")).click();
@@ -86,7 +86,7 @@ public class mvc {
 
             driver.findElement(By.id("btnSave")).click();
 
-            Thread.sleep(5000);
+            Thread.sleep(3000);
 
             driver.switchTo().defaultContent();
 
@@ -102,7 +102,7 @@ public class mvc {
 
             driver.findElement(By.id("btnSearchSimple")).click();
 
-            Thread.sleep(5000);
+            Thread.sleep(3000);
 
             driver.findElement(By.xpath("//button[@onclick='clickRemoveAll();']")).click();
             driver.findElement(By.xpath("//button[contains(.,'Sim')]")).click();
@@ -111,11 +111,11 @@ public class mvc {
 
             driver.findElement(By.cssSelector("span[class='awesome shopping-cart']")).click();
 
-            Thread.sleep(5000);
+            Thread.sleep(3000);
 
             driver.findElement(By.id("btnAvancar")).click();
 
-            Thread.sleep(5000);
+            Thread.sleep(3000);
 
             driver.findElement(By.id("Observacao_Value")).sendKeys("TESTE AUTOMAÇÃO - QA");
 
@@ -123,16 +123,23 @@ public class mvc {
 
             driver.findElement(By.id("btnAvancar")).click();
 
-            Thread.sleep(5000);
+            Thread.sleep(3000);
 
             combo = new Select(driver.findElement(By.name("Itens[0].GrupoCompras.Value")));
             combo.selectByValue("115");
             combo = new Select(driver.findElement(By.name("Itens[0].CategoriaContabil.Value")));
             combo.selectByValue("K");
             Thread.sleep(3000);
-            driver.findElement(By.name("Itens[0].DataEsperadaComprador.Value")).sendKeys(formato.format(calendario.getTime()));
+
+            driver.findElement(By.name("Itens[0].DataEsperadaComprador.Value")).click();
+
+            File srcFile2 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            FileUtils.copyFile(srcFile2, new File("target/screenshots/" + data.getTime() + ".png"));
+
+            driver.findElement(By.name("Itens[0].DataEsperadaComprador.Value")).sendKeys(formato.format(calendario.getTime()).replaceAll("/",""));
             driver.findElement(By.name("Itens[0].BOrgs[0].BorgDescription")).click();
             Thread.sleep(1000);
+
             driver.findElement(By.name("Itens[0].BOrgs[0].BorgDescription")).sendKeys(Keys.DOWN);
             driver.findElement(By.name("Itens[0].BOrgs[0].BorgDescription")).sendKeys(Keys.ENTER);
             combo = new Select(driver.findElement(By.name("Itens[0].LocalEntrega.Value")));
