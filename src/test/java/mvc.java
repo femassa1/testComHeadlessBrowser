@@ -24,7 +24,7 @@ public class mvc {
         File file = new File("phantomjs");
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
         Calendar calendario = Calendar.getInstance();
-        Date data = new Date();
+
         System.setProperty("phantomjs.binary.path", file.getAbsolutePath());
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(CapabilityType.SUPPORTS_ALERTS, true);
@@ -86,7 +86,7 @@ public class mvc {
 
             driver.findElement(By.id("btnSave")).click();
 
-            Thread.sleep(4000);
+            Thread.sleep(2000);
 
             driver.switchTo().defaultContent();
 
@@ -94,7 +94,7 @@ public class mvc {
 
             driver.findElement(By.id("catalog-ativar")).click();
 
-            Thread.sleep(3000);
+            Thread.sleep(1000);
 
             driver.findElement(By.cssSelector("input[id='Tipo'][type='radio'][value='" + "CodigoCliente" + "']")).click();
 
@@ -102,24 +102,30 @@ public class mvc {
 
             driver.findElement(By.id("btnSearchSimple")).click();
 
-            Thread.sleep(3000);
+            Thread.sleep(5000);
 
             driver.findElement(By.xpath("//button[@onclick='clickRemoveAll();']")).click();
             driver.findElement(By.xpath("//button[contains(.,'Sim')]")).click();
 
-            Thread.sleep(3000);
+            Thread.sleep(5000);
 
             driver.findElement(By.cssSelector("span[class='awesome shopping-cart']")).click();
 
-            Thread.sleep(3000);
+            Thread.sleep(2000);
 
             driver.findElement(By.id("btnAvancar")).click();
 
             Thread.sleep(4000);
 
+            Integer count = 0;
+            while (driver.findElements(By.id("Observacao_Value")).size() == 0 && count < 10) {
+                Thread.sleep(2000);
+                count++;
+            }
+
             driver.findElement(By.id("Observacao_Value")).sendKeys("TESTE AUTOMAÇÃO - QA");
 
-            driver.findElement(By.id("Attributes_0__valor")).sendKeys("TESTE AUTOMAÇÃO - QA");
+            driver.findElement(By.name("Attributes[0].valor")).sendKeys("TESTE AUTOMAÇÃO - QA");
 
             driver.findElement(By.id("btnAvancar")).click();
 
@@ -132,9 +138,6 @@ public class mvc {
             Thread.sleep(3000);
 
             driver.findElement(By.name("Itens[0].DataEsperadaComprador.Value")).click();
-
-            File srcFile2 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(srcFile2, new File("target/screenshots/" + data.getTime() + ".png"));
 
             driver.findElement(By.name("Itens[0].DataEsperadaComprador.Value")).sendKeys(formato.format(calendario.getTime()).replaceAll("/",""));
             driver.findElement(By.name("Itens[0].BOrgs[0].BorgDescription")).click();
@@ -178,13 +181,17 @@ public class mvc {
 
             Thread.sleep(3000);
 
-            File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(srcFile, new File("target/screenshots/" + data.getTime() + ".png"));
+            screenshot();
 
             driver.close();
         } catch (Exception e) {
-            File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(srcFile, new File("target/screenshots/" + data.getTime() + ".png"));
+            screenshot();
         }
+    }
+
+    public void screenshot() throws IOException {
+        Date data = new Date();
+        File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(srcFile, new File("target/screenshots/" + data.getTime() + ".png"));
     }
 }
