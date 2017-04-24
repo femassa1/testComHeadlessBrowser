@@ -49,13 +49,13 @@ public class mvc {
             trocarFrame();
 
             driver.findElement(By.name("LoginName")).clear();
-            driver.findElement(By.name("LoginName")).sendKeys("B00LPA");
+            driver.findElement(By.name("LoginName")).sendKeys("###");
 
             driver.findElement(By.name("RAWSenha")).clear();
             //if(driver.getCurrentUrl().contains("qa"))
-            //driver.findElement(By.name("RAWSenha")).sendKeys("qualidade@123");
+            //driver.findElement(By.name("RAWSenha")).sendKeys("###");
             //else
-            driver.findElement(By.name("RAWSenha")).sendKeys("trunk123");
+            driver.findElement(By.name("RAWSenha")).sendKeys("###");
 
             driver.findElement(By.cssSelector(".botaoLogin")).click();
 
